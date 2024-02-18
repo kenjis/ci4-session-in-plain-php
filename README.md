@@ -1,8 +1,12 @@
 # Using CodeIgniter4 Session in Plain PHP
 
+This repository shows how to use CodeIgniter4's 
+[Session Library](https://codeigniter.com/user_guide/libraries/sessions.html)
+in plain PHP.
+
 ## Requirements
 
-- PHP 8.2
+- PHP 7.4 or later
 - CodeIgniter 4.4.5
 
 ## Diretory Structure
@@ -19,6 +23,12 @@
 ```
 
 ## How to Run
+
+Install Composer dependencies:
+
+```console
+$ composer update
+```
 
 Create `.env` file:
 
