@@ -25,7 +25,7 @@ define('ENVIRONMENT', 'testing');
 defined('CI_DEBUG') || define('CI_DEBUG', true);
 
 // Often these constants are pre-defined, but query the current directory structure as a fallback
-defined('HOMEPATH') || define('HOMEPATH', realpath(rtrim(getcwd(), '\\/ ')) . DIRECTORY_SEPARATOR);
+defined('HOMEPATH') || define('HOMEPATH', realpath(rtrim(__DIR__ . '/../..', '\\/ ')) . DIRECTORY_SEPARATOR);
 $source = is_dir(HOMEPATH . 'app')
     ? HOMEPATH
     : (is_dir('vendor/codeigniter4/framework/') ? 'vendor/codeigniter4/framework/' : 'vendor/codeigniter4/codeigniter4/');
