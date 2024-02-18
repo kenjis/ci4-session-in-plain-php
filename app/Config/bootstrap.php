@@ -4,15 +4,8 @@
  * CodeIgniter4 bootstrap file for plain PHP applications
  */
 
-// Often these constants are pre-defined, but query the current directory structure as a fallback
-defined('HOMEPATH') || define('HOMEPATH', realpath(rtrim(__DIR__ . '/../..', '\\/ ')) . DIRECTORY_SEPARATOR);
-$source = is_dir(HOMEPATH . 'app')
-    ? HOMEPATH
-    : (is_dir('vendor/codeigniter4/framework/') ? 'vendor/codeigniter4/framework/' : 'vendor/codeigniter4/codeigniter4/');
-defined('CONFIGPATH') || define('CONFIGPATH', realpath($source . 'app/Config') . DIRECTORY_SEPARATOR);
-
 // Load framework paths from their config file
-require CONFIGPATH . 'Paths.php';
+require __DIR__  . '/Paths.php';
 $paths = new Config\Paths();
 
 // Location of the framework bootstrap file.
