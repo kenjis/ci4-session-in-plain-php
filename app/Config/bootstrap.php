@@ -90,5 +90,3 @@ $env->load();
 
 // Always load the URL helper, it should be used in most of apps.
 helper('url');
-
-Services::routes()->loadRoutes();
