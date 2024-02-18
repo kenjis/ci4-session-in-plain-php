@@ -43,6 +43,3 @@ if (is_file(APPPATH . 'Config/Boot/' . ENVIRONMENT . '.php')) {
     exit(EXIT_ERROR); // EXIT_ERROR
     // @codeCoverageIgnoreEnd
 }
-
-// Always load the URL helper, it should be used in most of apps.
-helper('url');
